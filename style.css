@@ -1,0 +1,399 @@
+html,
+body {
+	height: 100%;
+	font-family: 'Montserrat', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	
+}
+
+h2,
+h4 {
+	margin: 0;
+	color: #1c1c1c;
+	font-weight: 600;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+h4 {
+	font-size: 24px;
+}
+
+p {
+	font-size: 14px;
+	color: #585858;
+	line-height: 2;
+}
+
+img {
+	max-width: 100%;
+}
+
+input:focus,
+select:focus,
+button:focus,
+textarea:focus {
+	outline: none;
+}
+
+a:hover,
+a:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+/*---------------------
+  Helper CSS
+-----------------------*/
+
+.section-title {
+	margin-bottom: 80px;
+	text-align: center;
+	position: relative;
+}
+
+.section-title img {
+	margin-bottom: 5px;
+}
+
+.section-title h2 {
+	font-size: 48px;
+	font-weight: 700;
+	text-align: center;
+}
+
+.section-title p {
+	font-size: 12px;
+	font-weight: 500;
+	margin-bottom: 0;
+	color: #8e8e8e;
+	line-height: normal;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-bottom: 5px;
+	text-align: center;
+}
+
+.section-title.st-white h2 {
+	color: #1c1c1c;
+	text-align: center;
+}
+
+.set-bg {
+    background-image: url("https://images.pexels.com/photos/1061640/pexels-photo-1061640.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-position: center;
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+	text-align: center;
+}
+
+.spad {
+	padding-top: 105px;
+	padding-bottom: 50px;
+	text-align: center;
+}
+
+
+.text-white h2,
+.text-white h4,
+.text-white p,
+.text-white span,
+.text-white li,
+.text-white a {
+	color: #fff;
+}
+
+/*------------------
+  Header section
+---------------------*/
+
+.header-section {
+  	position: absolute;
+	width: 100%;
+	padding-top: 25px;
+	z-index: 99;
+}
+
+.site-logo {
+	display: inline-block;
+	margin-left: 50px;
+}
+
+.nav-switch {
+	display: none;
+}
+
+.nav-warp {
+	float: right;
+}
+
+.main-menu {
+	list-style: none;
+	float: right;
+	padding-top: 25px;
+    color: #1491cf;
+}
+
+.main-menu li {
+	display: inline;
+    color: #fff;
+}
+
+.main-menu li a {
+	display: inline-block;
+	font-size: 16px;
+	color: #1491cf;
+	margin-left: 50px;
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	transition: all 0.4s;
+}
+
+.main-menu li a:hover {
+	color: #eb2b63;
+}
+
+.user-panel {
+	float: right;
+	background: #eb2b63;
+	color: #fff;
+	margin-left: 30px;
+	margin-right: 70px;
+	margin-top: 15px;
+	font-size: 14px;
+	padding: 12px 19px;
+	line-height: 1;
+	border-radius: 14px;
+}
+
+.user-panel a {
+	color: #fff;
+}
+
+/*------------------
+  Hero section
+---------------------*/
+
+.hero-section {
+    background-image: url("https://images.pexels.com/photos/1687845/pexels-photo-1687845.jpeg?auto=compress&cs=tinysrgb&w=600");
+  background-position: center;
+  background-size: cover;
+	height: 835px;
+	overflow: hidden;
+
+}
+
+.hero-content {
+	display: -ms-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	height: 100%;
+	position: relative;
+}
+
+.hero-content h2 {
+	font-size: 90px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	line-height: 1;
+	text-align: center;
+}
+
+.hero-content P { 
+	font-size: 18px;
+	line-height: 1.7;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.hero-camping {
+	position: absolute;
+	bottom: 8px;
+	right: -198px;
+}
+
+.hero-camping img {
+	position: relative;
+	-webkit-animation: camping 2s linear infinite;
+	animation: camping 2s linear infinite;
+}
+
+.site-btn {
+	height: 59px;
+	min-width: 229px;
+    color: #fff;
+    background: #eb2b63;
+}
+
+@keyframes camping {
+	0% {
+		left: 20px;
+		bottom: 20px;
+	}
+	25% {
+		left: -20px;
+		bottom: 20px;
+	}
+	50% {
+		left: -20px;
+		bottom: 0px;
+	}
+	75% {
+		left: 0px;
+		bottom: 0px;
+	}
+	100% {
+		left: 20px;
+		bottom: 20px;
+	}
+}
+
+/* ----------------
+  Features
+---------------------*/
+
+.features-section .section-title {
+	margin-bottom: 130px;
+}
+
+.features-section .container {
+	margin-bottom: -70px;
+}
+
+.feature-item {
+	text-align: center;
+	margin-bottom: 55px;
+}
+
+.feature-item .ft-icon {
+	display: -ms-inline-flex;
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	width: 87px;
+	height: 87px;
+	background: #eb2b63;
+	font-size: 43px;
+	color: #000000;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	border-radius: 50%;
+	margin-bottom: 40px;
+}
+
+.feature-item h4 {
+	margin-bottom: 28px;
+}
+
+.feature-item.fi-center-top .ft-icon {
+	-webkit-transform-origin: bottom center;
+	-ms-transform-origin: bottom center;
+	transform-origin: bottom center;
+	-webkit-transform: scale(1.65);
+	-ms-transform: scale(1.65);
+	transform: scale(1.65);
+}
+
+.feature-item.fi-center-top .ft-icon i {
+	-webkit-transform: scale(0.8);
+	-ms-transform: scale(0.8);
+	transform: scale(0.8);
+}
+
+/* ----------------
+   Domain search
+ ---------------------*/
+
+ .domain-form-warp {
+	max-width: 993px;
+	margin: 0 auto;
+}
+
+.domain-form-warp p {
+	font-size: 12px;
+	color: #1c1c1c;
+	opacity: 0.26;
+	margin-bottom: 0;
+	line-height: 1;
+}
+
+.domain-search-form {
+     	margin-bottom: 15px;
+}
+
+.domain-search-form input {
+	width: calc(100% - 239px);
+	height: 59px;
+	font-size: 14px;
+	border: none;
+	background: #d5d2d2;
+	border-radius: 14px;
+	display: inline-block;
+	padding: 0 31px;
+	margin-right: 5px;
+}
+
+.domain-search-form .site-btn {
+	height: 59px;
+	min-width: 229px;
+}
+
+.domain-search-form.df-white-bg input {
+ 	background: #bcb7bf;
+}
+
+
+/* ----------------
+  Responsive
+---------------------*/
+
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1175px;
+	}
+}
+
+/* Small Mobile :320px. */
+
+@media only screen and (max-width: 479px) {
+	.site-logo {
+		margin-left: 15px;
+	}
+	.section-title h2 {
+		font-size: 35px;
+	}
+	.hero-section {
+		height: 750px;
+	}
+	.hero-content h2 {
+		font-size: 40px;
+		margin-bottom: 30px;
+	}
+	.domain-search-form {
+		text-align: center;
+	}
+	.domain-search-form input {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+}
